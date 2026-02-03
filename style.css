@@ -2,21 +2,26 @@
 body {
   font-family: Arial, sans-serif; /* Sets a simple font for the text */
   margin: 0; /* Removes default margin */
-  padding: 0; /* Removes default padding */
+  padding: 60px 0 0 0; /* Removes default padding, adds top padding for fixed nav */
   line-height: 1.6; /* Makes text easier to read */
   text-align: center; /* Centers all text on the page */
+  background-color: #F5F5DC; /* Beige background */
 }
 
 /* Styles for the navigation bar */
 nav {
-  background-color: #333; /* Dark background for the nav */
+  background-color: #008080; /* Teal background like footer */
   padding: 10px 0; /* Adds space inside the nav */
+  position: fixed; /* Fixes the nav at the top */
+  width: 100%; /* Makes it full width */
+  top: 0; /* Positions at the top */
+  z-index: 100; /* Ensures it's above other content */
 }
 
 nav ul {
   list-style-type: none; /* Removes bullet points from the list */
   text-align: center; /* Centers the list items */
-  margin: 0;
+  margin: 10px 0;
   padding: 0;
 }
 
@@ -26,24 +31,42 @@ nav li {
 }
 
 nav a {
-  color: white; /* White text for links */
+  color: #F5F5DC; /* Beige text for links */
   text-decoration: none; /* Removes underline from links */
   font-weight: bold; /* Makes text bold */
 }
 
 nav a:hover {
-  color: #ddd; /* Lightens color on hover */
+  color: #228B22; /* Forest green on hover */
 }
 
 /* Styles for the hero section */
 #home {
   padding: 50px 20px; /* Adds space around the hero */
   text-align: center; /* Centers the heading */
+  background-image: url('img/profile3 prorez.jpg'); /* Sets the background image */
+  background-size: cover; /* Makes the image cover the entire section */
+  background-position: center; /* Centers the background image */
+  background-attachment: fixed; /* Keeps the background fixed during scroll */
+  color: white; /* Makes text white for contrast */
+  min-height: 100vh; /* Makes the section full height */
+  display: flex; /* Uses flexbox for layout */
+  align-items: center; /* Aligns items vertically */
+  gap: 20px; /* Adds space between h1 and hero-content */
+}
+
+#home h1 {
+  flex: 1; /* Allows h1 to take space */
+  text-align: left; /* Aligns h1 to the left */
+  margin: 0; /* Removes default margin */
 }
 
 .hero-content {
   max-width: 800px; /* Limits the width of the content */
   margin: 0 auto; /* Centers the content */
+  background-color: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent black overlay for readability */
+  padding: 20px; /* Adds padding inside the overlay */
+  border-radius: 10px; /* Rounds the corners */
 }
 
 .profile-pic {
@@ -55,12 +78,16 @@ nav a:hover {
 }
 
 .bio {
-  /* Text is now centered from body */
+  text-align: center; /* Centers the text */
 }
 
 .skills {
-  list-style-type: disc; /* Adds bullet points to skills */
-  padding-left: 20px; /* Indents the list */
+  list-style-type: none; /* Removes bullet points */
+  padding: 0; /* Removes default padding */
+  display: flex; /* Makes the list horizontal */
+  justify-content: center; /* Centers the items */
+  gap: 20px; /* Adds space between items */
+  flex-wrap: wrap; /* Allows wrapping if needed */
 }
 
 /* Styles for other sections */
@@ -69,6 +96,106 @@ section {
   /* Removed clear: both since no floats */
 }
 
+#about {
+  background-color: white; /* White background for about section */
+}
+
 section h2 {
-  color: #333; /* Dark color for headings */
+  color: #228B22; /* Forest green color for headings */
+}
+
+/* Styles for social links */
+.social-links {
+  list-style-type: none; /* Removes bullet points */
+  padding: 0;
+  text-align: center; /* Centers the links */
+}
+
+.social-links li {
+  display: inline-block; /* Makes them horizontal */
+  margin: 0 10px; /* Adds space between links */
+}
+
+.social-links a {
+  color: #008080; /* Teal color for links */
+  text-decoration: none; /* Removes underline */
+  display: flex; /* Uses flex for icon and text alignment */
+  align-items: center; /* Aligns icon and text */
+  gap: 5px; /* Adds space between icon and text */
+}
+
+.social-links a:hover {
+  color: #228B22; /* Forest green on hover */
+}
+
+.social-icon {
+  width: 20px; /* Sets icon size */
+  height: 20px; /* Keeps icons square */
+}
+
+/* Styles for contact form */
+form {
+  max-width: 600px; /* Increases form width for horizontal layout */
+  margin: 0 auto; /* Centers the form */
+  text-align: left; /* Aligns labels and inputs to the left */
+}
+
+.form-row {
+  display: flex; /* Makes name and email side by side */
+  gap: 20px; /* Adds space between groups */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.form-group {
+  flex: 1; /* Makes groups take equal space */
+  min-width: 200px; /* Sets minimum width */
+}
+
+label {
+  display: block; /* Makes labels block elements */
+  margin-bottom: 5px; /* Adds space below labels */
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%; /* Makes inputs full width within group */
+  padding: 8px; /* Adds padding inside inputs */
+  margin-bottom: 10px; /* Adds space below inputs */
+  border: 1px solid #ccc; /* Adds border */
+  border-radius: 4px; /* Rounds corners */
+  box-sizing: border-box; /* Includes padding in width */
+}
+
+input[type="submit"] {
+  background-color: #008080; /* Teal background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Adds padding */
+  border: none; /* Removes border */
+  border-radius: 4px; /* Rounds corners */
+  cursor: pointer; /* Changes cursor on hover */
+  display: block; /* Makes it block for centering */
+  margin: 0 auto; /* Centers the button */
+}
+
+input[type="submit"]:hover {
+  background-color: #228B22; /* Forest green on hover */
+}
+
+/* Styles for footer */
+footer {
+  position: relative;
+  background-color: #008080; /* Teal background */
+  color: #F5F5DC; /* Beige text */
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.wave {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: #008080;
+  border-radius: 50% 50% 0 0;
 }

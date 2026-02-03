@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <title>Dylan Moen's Web Development Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,18 +18,20 @@
 
   <!-- Hero section with profile pic, bio, and skills -->
   <section id="home">
-    <h1>Welcome to My Personal Website</h1>
+    <h1>Web Development with Dylan Moen</h1>
     <div class="hero-content">
       <img src="img/profile.jpg" alt="My Profile Picture" class="profile-pic">
       <div class="bio">
         <h2>About Me</h2>
-        <p>This is a short bio about myself. I am a student learning web development. I enjoy creating websites and learning new skills.</p>
+        <p>Howdy y'all. My name is Dylan Moen and I am a student at Texas State University studying to be a media designer and film editor. On this site, every designer should have a full tool belt of skills under numerous trades, and that includes web development. I will showcase the projects I build here on this website. All designs are an extension of my ever-growing resume.</p>
         <h3>My Skills</h3>
         <ul class="skills">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Basic Design</li>
+          <li>💻 HTML</li>
+          <li>🎨 CSS</li>
+          <li>⚙️ JavaScript</li>
+          <li>🖌️ Basic Design</li>
+          <li>🎥 Film Editing</li>
+          <li>📢 Media Communications</li>
         </ul>
       </div>
     </div>
@@ -38,17 +40,48 @@
   <!-- Placeholder sections for About, Projects, Contact -->
   <section id="about">
     <h2>About</h2>
-    <p>More details about me will go here.</p>
+    <p>I’ve worked as a videographer for CBS Austin for the past two years while balancing a full-time role in new media and attending Texas State University. As an aspiring film editor and media designer, I’m passionate about storytelling across platforms. I’m currently expanding my skill set in web development to broaden my capabilities as a digital creator and build more immersive media experiences.</p>
+    <p>Connect with me on social media:</p>
+    <ul class="social-links">
+      <li><a href="https://www.linkedin.com/in/dylan-moen-75213222a" target="_blank"><img src="img/linkedin-icon.svg" alt="LinkedIn" class="social-icon"> LinkedIn</a></li>
+      <li><a href="https://www.instagram.com/dylan_in_austin" target="_blank"><img src="img/instagram-icon.svg" alt="Instagram" class="social-icon"> Instagram</a></li>
+      <li><a href="https://beingaphotojournalist.wordpress.com/" target="_blank"><img src="img/website-icon.svg" alt="Website" class="social-icon"> Career Website</a></li>
+    </ul>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-    <p>My portfolio projects will be listed here.</p>
+    <p>My portfolio projects will be listed here!</p>
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
-    <p>How to reach me: email@example.com</p>
+    <h2>Want to Contact Me?</h2>
+    <p>Phone: +1 (737) 329-6538</p>
+    <p>Email: <a href="mailto:Dylan.user124@outlook.com">Dylan.user124@outlook.com</a></p>
+    <p>Based out of Austin, TX</p>
+    <h3>Send me a message!</h3>
+    <form action="mailto:Dylan.user124@outlook.com" method="post" enctype="text/plain">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email:</label><br>
+          <input type="email" id="email" name="email" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <input type="submit" value="Send Message">
+    </form>
   </section>
+
+  <footer>
+    <div class="wave"></div>
+    <p>&copy; 2026 Dylan Moen. Github All rights reserved.</p>
+  </footer>
 </body>
 </html>
