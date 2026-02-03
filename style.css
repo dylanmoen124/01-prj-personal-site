@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif; /* Sets a simple font for the text */
   margin: 0; /* Removes default margin */
   padding: 60px 0 0 0; /* Removes default padding, adds top padding for fixed nav */
-  line-height: 1.6; /* Makes text easier to read */
+  line-height: 1.5; /* Makes text easier to read */
   text-align: center; /* Centers all text on the page */
   background-color: #F5F5DC; /* Beige background */
 }
