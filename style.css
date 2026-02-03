@@ -1,1 +1,74 @@
-/* Add you CSS here */
+/* Basic styles for the body */
+body {
+  font-family: Arial, sans-serif; /* Sets a simple font for the text */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  line-height: 1.6; /* Makes text easier to read */
+  text-align: center; /* Centers all text on the page */
+}
+
+/* Styles for the navigation bar */
+nav {
+  background-color: #333; /* Dark background for the nav */
+  padding: 10px 0; /* Adds space inside the nav */
+}
+
+nav ul {
+  list-style-type: none; /* Removes bullet points from the list */
+  text-align: center; /* Centers the list items */
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline; /* Makes list items horizontal */
+  margin: 0 15px; /* Adds space between links */
+}
+
+nav a {
+  color: white; /* White text for links */
+  text-decoration: none; /* Removes underline from links */
+  font-weight: bold; /* Makes text bold */
+}
+
+nav a:hover {
+  color: #ddd; /* Lightens color on hover */
+}
+
+/* Styles for the hero section */
+#home {
+  padding: 50px 20px; /* Adds space around the hero */
+  text-align: center; /* Centers the heading */
+}
+
+.hero-content {
+  max-width: 800px; /* Limits the width of the content */
+  margin: 0 auto; /* Centers the content */
+}
+
+.profile-pic {
+  width: 150px; /* Sets the size of the profile picture */
+  height: 150px; /* Keeps it square */
+  border-radius: 50%; /* Makes it circular */
+  display: block; /* Makes it a block element */
+  margin: 0 auto 20px; /* Centers it and adds space below */
+}
+
+.bio {
+  /* Text is now centered from body */
+}
+
+.skills {
+  list-style-type: disc; /* Adds bullet points to skills */
+  padding-left: 20px; /* Indents the list */
+}
+
+/* Styles for other sections */
+section {
+  padding: 40px 20px; /* Adds space around sections */
+  /* Removed clear: both since no floats */
+}
+
+section h2 {
+  color: #333; /* Dark color for headings */
+}
